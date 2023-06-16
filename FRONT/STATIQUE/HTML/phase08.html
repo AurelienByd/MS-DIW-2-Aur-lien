@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="http://bienvu.net/script.php" method="get">
+    <form action="http://bienvu.net/script.php" method="post">
         <p>* Ces zones sont obligatoires</p>
         <fieldset>
             <legend>Vos coordonnées</legend>
@@ -19,8 +19,23 @@
             <label for="codepostal">Code postal* : </label><input type="number" name="codepostal" required><br>
             <label for="adresse">Adresse : </label><input type="text" name="adresse"><br>
             <label for="ville">Ville : </label><input type="text" name="ville"><br>
-            <label for="email">Email* : </label><input type="email" name="email" required>
-        </fieldset>
+            <label for="email">Email* : </label><input type="email" name="email" placeholder="dave.loper@afpa.fr" required>
+        </fieldset><br>
+        <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">Sujet* : </label>
+            <select name="sujet" id="sujet" required>
+                <option value="" selected>Veuillez séléctionner un sujet</option>
+                <option value="commandes">Mes commandes</option>
+                <option value="questionproduit">Question sur un produit</option>
+                <option value="réclamation">Réclamation</option>
+                <option value="autres">Autres</option>
+            </select><br>
+            <label for="votrequestion">Votre question* : </label><textarea name="question" cols="20" rows="2" required></textarea>
+        </fieldset><br>
+        <label for="accepter"></label><input type="checkbox" required>* J'accepte le traitement informatique de ce formulaire<br><br>
+        <button type="submit">Envoyer</button>
+        <button type="reset">Annuler</button>
     </form>
 </body>
 </html>
