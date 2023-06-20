@@ -9,25 +9,25 @@
 </head>
 <body>
     <header>
-        <div id="haut">
-            <img src="assets\img\jarditou_html_zip\images\jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou" class="imglogojarditou"><br>
-            <p class="titre">Tout le jardin</p>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div><img src="assets\img\jarditou_html_zip\images\jarditou_logo.jpg" class="img-fluid w-25" alt="Logo Jarditou" title="Logo Jarditou"></div>
+            <p class="fs-2 p-2">Tout le jardin</p>
         </div>
-        <div id="lienheader">
-            <a href="index.html" class="lien1" title="Ouvrir Accueil">Accueil</a>
-            <a href="tableau.html" class="lien2" title="Ouvrir Tableau">Tableau</a>
-            <a href="contact.html" class="lien3" title="Ouvrir Contact">Contact</a>
-        </div>
-        <img src="assets\img\jarditou_html_zip\images\promotion.jpg" id="imgpromotionjarditou" alt="Promotion Jarditou" title="Promotion Jarditou"><br>
+        <nav class="container-fluid d-flex justify-content-between p-3 align-items-center bg-light">
+            <div>
+            <a class="text-black fs-5 ms-2 me-2" href="">Jarditou.com</a>
+            <a class="text-body-tertiary ms-1 me-1" href="index.html" class="lien1" title="Ouvrir Accueil">Accueil</a>
+            <a class="text-body-tertiary ms-1 me-1" href="tableau.html" class="lien2" title="Ouvrir Tableau">Tableau</a>
+            <a class="text-body-tertiary ms-1 me-1" href="contact.html" class="lien3" title="Ouvrir Contact">Contact</a>
+            </div>
+            <div><input type="text" placeholder="Votre promotion"><button type="submit" class="btn-sm ms-2 me-2 btn btn-outline-success">Rechercher</button></div>
+        </nav>
+        <img src="assets\img\jarditou_html_zip\images\promotion.jpg" class="container-fluid" alt="Promotion Jarditou" title="Promotion Jarditou"><br>
     </header>
-    <div class="tableau">
-        <div class="table">
-            <h1>Tableau</h1>
-            <hr>
-            <table>
-                <thead>
+            <table class="table table-bordered table-striped">
+                <thead class="table-secondary">
                     <tr>
-                        <th>Photo</th>
+                        <th class="col-3">Photo</th>
                         <th>ID</th>
                         <th>Catégorie</th>
                         <th>Libellé</th>
@@ -35,9 +35,9 @@
                         <th>Couleur</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\7.jpg" alt="image" class="imgtaille"></td>
+                <tbody class="">
+                    <tr class="table-warning">
+                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\7.jpg" alt="image" class="img-fluid w-25"></td>
                         <td>7</td>
                         <td>Barbecues</td>
                         <td>Aramis</td>
@@ -45,15 +45,15 @@
                         <td>Brun</td>
                     </tr>
                     <tr>
-                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\8.jpg" alt="image" class="imgtaille"></td>
+                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\8.jpg" alt="image" class="img-fluid w-25"></td>
                         <td>8</td>
                         <td>Barbecues</td>
                         <td>Athos</td>
                         <td>249.99€</td>
                         <td>Noir</td>
                     </tr>
-                    <tr>
-                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\11.jpg" alt="image" class="imgtaille"></td>
+                    <tr class="table-warning">
+                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\11.jpg" alt="image" class="img-fluid w-25"></td>
                         <td>11</td>
                         <td>Barbecues</td>
                         <td>Clatronic</td>
@@ -61,15 +61,15 @@
                         <td>Chrome</td>
                     </tr>
                     <tr>
-                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\12.jpg" alt="image" class="imgtaille"></td>
+                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\12.jpg" alt="image" class="img-fluid w-25"></td>
                         <td>12</td>
                         <td>Barbecues</td>
                         <td>Camping</td>
                         <td>88.00€</td>
                         <td>Noir</td>
                     </tr>
-                    <tr>
-                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\13.jpg" alt="image" class="imgtaille"></td>
+                    <tr class="table-warning">
+                        <td><img src="assets\img\jarditou_html_zip\jarditou_photos\13.jpg" alt="image" class="img-fluid w-25"></td>
                         <td>13</td>
                         <td>Brouette</td>
                         <td>Green</td>
@@ -78,14 +78,11 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="box" id="box2">[COLONNE DROITE]</div>
-    </div>
-    <footer>
-        <div id="lienfooter">
-            <a href="mention_légales.html" class="lien1" title="Ouvrir Mention légales">Mention légales</a>
-            <a href="horaires.html" class="lien2" title="Ouvrir Horaires">Horaires</a>
-            <a href="plan_du_site.html" class="lien3" title="Ouvrir Plan du site">Plan du site</a>
+    <footer class="container-fluid bg-dark p-3">
+        <div class="d-flex">
+            <a href="mention_légales.html" class="text-secondary ms-2 me-2" title="Ouvrir Mention légales">Mention légales</a>
+            <a href="horaires.html" class="text-secondary ms-2 me-2" title="Ouvrir Horaires">Horaires</a>
+            <a href="plan_du_site.html" class="text-secondary ms-2 me-2" title="Ouvrir Plan du site">Plan du site</a>
         </div>
     </footer>
 </body>

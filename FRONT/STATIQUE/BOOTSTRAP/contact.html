@@ -9,63 +9,80 @@
 </head>
 <body>
     <header>
-        <div id="haut">
-            <img src="assets\img\jarditou_html_zip\images\jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou" class="imglogojarditou"><br>
-            <p class="titre">Tout le jardin</p>
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div><img src="assets\img\jarditou_html_zip\images\jarditou_logo.jpg" class="img-fluid w-25" alt="Logo Jarditou" title="Logo Jarditou"></div>
+            <p class="fs-2 p-2">Tout le jardin</p>
         </div>
-        <div id="lienheader">
-            <a href="index.html" class="lien1" title="Ouvrir Accueil">Accueil</a>
-            <a href="tableau.html" class="lien2" title="Ouvrir Tableau">Tableau</a>
-            <a href="contact.html" class="lien3" title="Ouvrir Contact">Contact</a>
-        </div>
-        <img src="assets\img\jarditou_html_zip\images\promotion.jpg" id="imgpromotionjarditou" alt="Promotion Jarditou" title="Promotion Jarditou"><br>
+        <nav class="container-fluid d-flex justify-content-between p-3 align-items-center bg-light">
+            <div>
+            <a class="text-black fs-5 ms-2 me-2" href="">Jarditou.com</a>
+            <a class="text-body-tertiary ms-1 me-1" href="index.html" class="lien1" title="Ouvrir Accueil">Accueil</a>
+            <a class="text-body-tertiary ms-1 me-1" href="tableau.html" class="lien2" title="Ouvrir Tableau">Tableau</a>
+            <a class="text-body-tertiary ms-1 me-1" href="contact.html" class="lien3" title="Ouvrir Contact">Contact</a>
+            </div>
+            <div><input type="text" placeholder="Votre promotion"><button type="submit" class="btn-sm ms-2 me-2 btn btn-outline-success">Rechercher</button></div>
+        </nav>
+        <img src="assets\img\jarditou_html_zip\images\promotion.jpg" class="container-fluid" alt="Promotion Jarditou" title="Promotion Jarditou"><br>
     </header>
-        <div class="contact">
-            <div class="formulaire">
-                <h1>Contact</h1>
-                <hr>
+            <div class="content-fluid p-3">
                 <p>* Ces zones sont obligatoires</p>
-                <form action="script.php" method="post" id="formulaire">
+                <form action="script.php" method="post">
                     <fieldset>
-                        <legend>Vos coordonnées</legend>
-                            <label for="name">Votre nom* : </label><input type="text" id="name" name="name" required><br>
-                            <label for="fname">Votre prénom* : </label><input type="text" id="fname" name="fname" required><br>
-                            <label for="sexe">Sexe* :</label>
-                                <input type="radio" id="sexe" name="sexe" value="Féminin" required> Féminin
-                                <input type="radio" name="sexe" value="Masculin" required> Masculin<br>
-                            <label for="date">Date de naissance* : </label><input type="date" name="date" id="date" required><br>
-                            <label for="cp">Code postal* : </label><input type="text" id="cp" name="cp" required><br>
-                            <label for="adresse">Adresse : </label><input type="text" id="adresse" name="adresse"><br>
-                            <label for="city">Ville : </label><input type="text" id="city" name="city"><br>
-                            <label for="email">Email* : </label><input type="text" id="email" placeholder="dave.loper@afpa.fr" name="email" required title="email">
+                        <legend class="fs-2">Vos coordonnées</legend>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom*</label><input type="text" name="name" class="form-control" placeholder="Veuillez saisir votre nom">
+                        </div>
+                        <div class="mb-3">
+                            <label for="fname" class="form-label">Prénom*</label><input type="text" id="fname" name="fname" class="form-control" placeholder="Veuillez saisir votre prénom" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sexe" class="form-label">Sexe*</label><br>
+                                <input type="radio" name="sexe" value="Féminin" required> Féminin
+                                <input type="radio" name="sexe" value="Masculin" required> Masculin
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Date de naissance*</label><input type="date" name="date" id="date" class="form-control"required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cp" class="form-label">Code postal*</label><input type="text" id="cp" name="cp" class="form-control"required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="adresse" class="form-label">Adresse</label><input type="text" id="adresse" name="adresse" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Ville</label><input type="text" id="city" name="city" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email*</label><input type="text" id="email" placeholder="dave.loper@afpa.fr" name="email" required title="email" class="form-control">
+                        </div>
                     </fieldset>
-                    <br>
                     <fieldset>
-                        <legend>Votre demande</legend>
-                            <label for="sujet">Sujet* : </label><select id="sujet" required name="veuillez séléctionner un sujet">
+                        <legend class="fs-2">Votre demande</legend>
+                        <div class="mb-3">
+                            <label for="sujet" class="form-label">Sujet</label><select id="sujet" required name="veuillez séléctionner un sujet" class="form-control">
                                 <option value="" selected>Veuillez séléctionner un sujet</option>
                                 <option value="Mes commandes">Mes commandes</option>
                                 <option value="Question sur un produit">Question sur un produit</option>
                                 <option value="Réclamation">Réclamation</option>
                                 <option value="Autres">Autres</option>
-                            </select><br>
-                            <label for="question">Votre question* : </label><textarea id="question" required name="question" rows="2"></textarea>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="question" class="form-label">Votre question* :</label><textarea id="question" required name="question" rows="2" class="form-control"></textarea>
+                        </div>
                     </fieldset>
-                    <br>
                         <input required type="checkbox" name="accepter" value="accepter">* J'accepte le traitement informatique de ce formulaire<br>
                     <br>
-                        <input type="submit" value="Envoyer">
-                        <input type="reset" value="Annuler">
+                        <input type="submit" value="Envoyer" class="btn btn-dark">
+                        <input type="reset" value="Annuler" class="btn btn-dark">
                 </form>
             </div>
-            <div class="box" id="box2">[COLONNE DROITE]</div>
-        </div>
-    <footer>
-        <div id="lienfooter">
-            <a href="mention_légales.html" class="lien1" title="Ouvrir Mention légales">Mention légales</a>
-            <a href="horaires.html" class="lien2" title="Ouvrir Horaires">Horaires</a>
-            <a href="plan_du_site.html" class="lien3" title="Ouvrir Plan du site">Plan du site</a>
-        </div>
-    </footer>
+        <footer class="container-fluid bg-dark p-3">
+            <div class="d-flex">
+                <a href="mention_légales.html" class="text-secondary ms-2 me-2" title="Ouvrir Mention légales">Mention légales</a>
+                <a href="horaires.html" class="text-secondary ms-2 me-2" title="Ouvrir Horaires">Horaires</a>
+                <a href="plan_du_site.html" class="text-secondary ms-2 me-2" title="Ouvrir Plan du site">Plan du site</a>
+            </div>
+        </footer>
 </body>
 </html>
