@@ -13,18 +13,21 @@
             <div class="col-lg-9 col-8 col-sm-8 col-md-8"><img src="assets\img\jarditou_html_zip\images\jarditou_logo.jpg" class="img-fluid w-25" alt="Logo Jarditou" title="Logo Jarditou"></div>
             <p class="fs-2 col-lg-3 col-4 col-sm-4 col-md-4 d-flex justify-content-end align-items-center">Tout le jardin</p>
         </div>
-        <nav class="navbar bg-body-tertiary">
-            <div class="d-flex justify-content-between p-3 align-items-center bg-light">
-                <div>
-            <a class="text-black fs-5 ms-2 me-2" href="">Jarditou.com</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Jarditou.com</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html" title="Ouvrir Accueil">Accueil</a>
+                    <a class="nav-link" href="tableau.html" title="Ouvrir Tableau">Tableau</a>
+                    <a class="nav-link" href="contact.html" title="Ouvrir Contact">Contact</a>
                 </div>
-                <div>
-            <a class="text-body-tertiary ms-1 me-1" href="index.html" class="lien1" title="Ouvrir Accueil">Accueil</a>
-            <a class="text-body-tertiary ms-1 me-1" href="tableau.html" class="lien2" title="Ouvrir Tableau">Tableau</a>
-            <a class="text-body-tertiary ms-1 me-1" href="contact.html" class="lien3" title="Ouvrir Contact">Contact</a>
+                <div class="d-flex"><input type="text" placeholder="Votre promotion"><button type="submit" class="btn-sm ms-2 me-2 btn btn-outline-success">Rechercher</button></div>
                 </div>
             </div>
-            <div><input type="text" placeholder="Votre promotion"><button type="submit" class="btn-sm ms-2 me-2 btn btn-outline-success">Rechercher</button></div>
         </nav>
         <img src="assets\img\jarditou_html_zip\images\promotion.jpg" class="container-fluid" alt="Promotion Jarditou" title="Promotion Jarditou"><br>
     </header>
@@ -82,13 +85,22 @@
                     </tr>
                 </tbody>
             </table>
-    <footer class="container-fluid bg-dark p-3">
-        <div class="d-flex">
-            <a href="mention_légales.html" class="text-secondary ms-2 me-2" title="Ouvrir Mention légales">Mention légales</a>
-            <a href="horaires.html" class="text-secondary ms-2 me-2" title="Ouvrir Horaires">Horaires</a>
-            <a href="plan_du_site.html" class="text-secondary ms-2 me-2" title="Ouvrir Plan du site">Plan du site</a>
-        </div>
-    </footer>
+            <footer class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a href="mention_légales.html" class="nav-link text-secondary" title="Ouvrir Mention légales">Mention légales</a>
+                            <a href="horaires.html" class="nav-link text-secondary" title="Ouvrir Horaires">Horaires</a>
+                            <a href="plan_du_site.html" class="nav-link text-secondary" title="Ouvrir Plan du site">Plan du site</a>
+                        </div>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
