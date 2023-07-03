@@ -63,5 +63,14 @@
 
 //Exercice 5
 
-var v = window.prompt("Saisir un mot");
+var mot = window.prompt("Saisir un mot :");
 
+let nbvoyelles = 0;
+let lvoyelles = ["a", "e", "i", "o", "u", "y"];
+
+    if (mot.includes(lvoyelles))
+    {
+        nbvoyelles++;
+    }
+
+console.log(nbvoyelles);
