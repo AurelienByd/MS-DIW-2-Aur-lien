@@ -1,0 +1,18 @@
+
+<html>
+<head>
+</head>
+<body>
+   <p>Saisissez un texte puis pressez le bouton 'Contrôle'</p><br>
+   <input id="champ" type="text"><button id="button">Contrôler</button>
+   <script>
+   var event = document.getElementById("button");
+   var texte = document.getElementById("champ");
+
+   event.addEventListener("click", function()
+   {
+    window.alert("Vous avez saisi: " + texte);
+   });
+   </script>
+</body>
+</html>
