@@ -7,11 +7,11 @@
    <input id="champ" type="text"><button id="button">Contrôler</button>
    <script>
    var event = document.getElementById("button");
-   var texte = document.getElementById("champ");
+   var texte = document.getElementById("champ").value;
 
    event.addEventListener("click", function()
    {
-    window.alert("Vous avez saisi: " + texte);
+   window.alert("Vous avez saisi: " + document.getElementById("champ").value);
    });
    </script>
 </body>
