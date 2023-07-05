@@ -63,14 +63,9 @@
 
 //Exercice 5
 
-var mot = window.prompt("Saisir un mot :");
+var mot = window.prompt("Ecrire un mot :");
+// var consonnes = /^[^aeiouyAEIOUY]+$/;
 
-let nbvoyelles = 0;
-let lvoyelles = ["a", "e", "i", "o", "u", "y"];
+var voyelles = mot.split(/[zrtpqsdfghjklmwxcvbnZRTPQSDFGHJKLMWXCVBN]/).join("").length;
 
-    if (mot.includes(lvoyelles))
-    {
-        nbvoyelles++;
-    }
-
-console.log(nbvoyelles);
+console.log("Il y a " + voyelles + " voyelles");
