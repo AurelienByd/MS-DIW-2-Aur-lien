@@ -1,4 +1,39 @@
 p {
-    display: inline-flex;
     color: #FF0000;
+}
+
+fieldset {
+    width: 70%;
+    margin: auto auto auto auto;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    width: 30%;
+}
+
+input {
+    display: block;
+    width: 30%;
+}
+
+.p {
+    display: block;
+    width: 10%;
+}
+
+button {
+    margin: 5px;
+}
+
+section {
+    display: flex;
+    margin: auto 5px auto auto;
+    justify-content: center;
 }
