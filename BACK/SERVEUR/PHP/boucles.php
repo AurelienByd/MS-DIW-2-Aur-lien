@@ -26,13 +26,27 @@
     //     $compte++;
     // }
 
-    // 3.
+    // 3. FINI
 
+    echo "<table>";
+    $ligne = 10;
+    $colonne = 10;
+    $value;
+    //$tablemulti = array();
 
-    
-
-
-
+    for($nbrcolonne = 1; $nbrcolonne < $colonne; $nbrcolonne++)
+    {
+        //$tablemulti[$nbrcolonne] = $value;
+        echo "<tr>";
+        for($nbrligne = 1; $nbrligne < $ligne; $nbrligne++)
+        {
+            $value = $nbrligne*$nbrcolonne;
+            //$tablemulti[$nbrligne][$nbrcolonne] = $value;
+            echo "<td>" . $value . "</td>";
+        }
+        echo "</tr>";
+    }
+    echo "</table>";
 
 
     ?>
