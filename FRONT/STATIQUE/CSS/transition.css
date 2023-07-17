@@ -1,0 +1,15 @@
+#boite:hover {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Comic Sans MS";
+    font-size: x-large;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 5s;
+}
+

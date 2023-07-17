@@ -1,0 +1,40 @@
+@keyframes ball_move {
+    0% { 
+        margin-left: 0%;
+        margin-top: 0%;
+        }
+    30% { 
+        margin-left: 100%;
+        margin-top: 20%;
+        }
+    68% { 
+        margin-left: 50%;
+        margin-top: 60%;
+        }
+    80% {
+        margin-left: 65%;
+        margin-top: 40%;
+    }
+    100% { 
+        margin-left: 0%;
+        margin-top: 0%;
+        }  
+}
+
+
+#ball {
+    background-color: red;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: ball_move;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+
