@@ -8,8 +8,8 @@
     justify-content: center;
     font-family: "Comic Sans MS";
     font-size: x-large;
-    transition-duration: 5s;
+    transition-duration: 30s;
     transition-timing-function: ease-in-out;
-    transition-delay: 5s;
+    transition-delay: 1s;
 }
 

@@ -1,4 +1,4 @@
-@keyframes ball_move {
+@keyframes ball_red_move {
     0% { 
         margin-left: 0%;
         margin-top: 0%;
@@ -21,14 +21,59 @@
         }  
 }
 
+@keyframes ball_blue_move {
+    0% { 
+        margin-left: 100%;
+        margin-top: 0%;
+        }
+    30% { 
+        margin-left: 60%;
+        margin-top: 80%;
+        }
+    68% { 
+        margin-left: 70%;
+        margin-top: 20%;
+        }
+    80% {
+        margin-left: 35%;
+        margin-top: 40%;
+    }
+    100% { 
+        margin-left: 100%;
+        margin-top: 0%;
+        }  
+}
 
-#ball {
+@keyframes ball_green_move {
+    0% { 
+        margin-left: 0%;
+        margin-top: 100%;
+        }
+    30% { 
+        margin-left: 90%;
+        margin-top: 20%;
+        }
+    68% { 
+        margin-left: 50%;
+        margin-top: 60%;
+        }
+    80% {
+        margin-left: 25%;
+        margin-top: 80%;
+    }
+    100% { 
+        margin-left: 0%;
+        margin-top: 100%;
+        }  
+}
+
+#ball_red {
     background-color: red;
     border: 3px solid black;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    animation-name: ball_move;
+    animation-name: ball_red_move;
     animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
@@ -38,3 +83,34 @@
     animation-play-state: running;
 }
 
+#ball_blue {
+    background-color: blue;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: ball_blue_move;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+
+#ball_green {
+    background-color: green;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation-name: ball_green_move;
+    animation-duration: 30s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
