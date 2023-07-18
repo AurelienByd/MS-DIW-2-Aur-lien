@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/FRONT/DYNAMIQUE/JAVASCRIPT/contact.css">
+    <link rel="stylesheet" href="contact.css">
     <title>Document</title>
 </head>
 <body>
     <h2>Vos coordonnées :</h2>
     <p><b>* Ces zones sont obligatoires pour envoyer le formulaire.</b></p>
-    <form action="" method="post" id="formjs16">
+    <form action="monscript.php" method="post" id="formjs16">
         <fieldset>
         <div><label for="societe"><b>Société :</b></label><input type="text" name="societe" id="societe"><p class="p">*</p></div><br>
         <span id="span1"></span><br>
@@ -49,6 +49,6 @@
 
 
 
-    <script src="/FRONT/DYNAMIQUE/JAVASCRIPT/contact.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>
