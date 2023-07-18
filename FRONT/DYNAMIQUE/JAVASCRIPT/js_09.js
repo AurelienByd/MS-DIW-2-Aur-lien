@@ -28,11 +28,11 @@ let str1;
 let str2;
 let n;
 
-function tableau(str1, str2, n) {
+function strtok(str1, str2, n) {
     str1 = "robert; dupont; amiens; 80600";
     str2 =";";
     n = str1.split(str2);
     console.log(n[2]);
 }
 
-tableau(str1, str2, n);
+strtok(str1, str2, n);
