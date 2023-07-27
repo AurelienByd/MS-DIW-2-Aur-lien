@@ -6,10 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-
-</table>
-<?php
-
-?>
+    <?php
+    
+    ?>
 </body>
 </html>

@@ -1,0 +1,113 @@
+/* body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+form {
+    border: 3px solid black;
+    background-color: rgb(112, 112, 255);
+}
+
+#div1 {
+    margin: auto auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#div2 {
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#div3 {
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    font-family: "Comic Sans MS";
+}
+
+input {
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    border: 3px solid red;
+    width: 15rem;
+}
+
+textarea {
+    display: block;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    border: 3px solid red;
+    width: 35rem;
+}
+
+input:focus {
+    border: 3px solid red;
+    background-color: rgb(255, 90, 90);
+}
+
+textarea:focus {
+    border: 3px solid red;
+    background-color: rgb(255, 90, 90);
+}
+
+#div4 {
+    margin: 30px auto auto auto;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: auto 5px auto 5px;
+    border: 2px solid yellow;
+    background-color: #000000;
+    color: #FF0000;
+    font-family: "Comic Sans MS";
+    font-size: large;
+    padding: 3px;
+}
+
+fieldset {
+    border: none;
+}
+
+@media (max-width:630px) {
+
+    #form {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #div1 {
+        margin: auto auto auto auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #div2 {
+        margin: auto auto auto auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #div3 {
+        margin: auto auto 40px auto;
+    }
+
+    input {
+        margin: auto auto 30px auto;
+    }
+
+    textarea {
+        width: 15rem;
+        height: 72px;
+    }
+}

@@ -6,9 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-
-    
-    ?>
+<?php
+    require "test.php";
+?>
 </body>
 </html>
