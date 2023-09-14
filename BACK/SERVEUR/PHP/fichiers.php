@@ -14,7 +14,7 @@
 
     //Récupération d'un fichier distant
 
-// echo "<table>";
+echo "<table>";
     $tableau = file("https://ncode.amorce.org/customers.csv");
 echo "<thead>";
 echo "<tr>";
