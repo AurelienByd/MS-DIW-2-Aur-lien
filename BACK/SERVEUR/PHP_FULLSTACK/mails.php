@@ -1,22 +1,21 @@
 <?php
 // test@mailhog.local
 
-$to = 'recipient@email.com';
+$destinataire = "rubis91999@gmail.com";
+$objet = "test";
+$message = "je teste l'envoie d'un mail avec PHP !";
+$headers = array(
+    "From" => "aurelien.bayard.pro@hotmail.com",
+    "Reply-To" => "aurelien.bayard.pro@hotmail.com"
+);
 
-    $subject = 'Mail envoyé depuis un script PHP';
+mail($destinataire, $objet, $message, $headers);
 
-    $message = 'Contenu text depuis sendmail de php';
-
-
-
-    if (mail($to, $subject, $message,)) {
-
-        echo 'Mail envoyé avec succèss.';
-
-    } else {
-
-        echo 'Unable to send mail. Please try again.';
-
-    }
+if (mail($destinataire, $objet, $message, $headers)) {
+    echo "envoyé";
+}
+else {
+    echo "non envoyé";
+}
 
 ?>

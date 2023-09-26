@@ -1,0 +1,216 @@
+#header {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#button_ajouter {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+}
+
+#section_1 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+#section_2 {
+    display: flex;
+    margin: auto auto 10px auto;
+    width: 90%;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+    margin: auto 20px auto auto;
+}
+
+.infotext {
+    margin: auto auto 1px auto;
+}
+
+#divsection_1 {
+    display: block;
+    align-content: space-between;
+    width: 40%;
+}
+
+#sousdiv1 {
+    display: block;
+    height: 80%;
+}
+
+#sousdiv2 {
+    display: block;
+    width: 10%;
+}
+
+.button_details {
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    width: 50px;
+    height: 18px;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width:1240px) {
+    #section_2 {
+        display: flex;
+        margin: auto auto 10px auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:1115px) {
+    .infotext {
+        margin: auto auto 1px auto;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:950px) {
+    #section_1 {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+}
+
+
+/* Pour le formulaire d'ajout de vinyles */
+
+.label_form_ajout_vinyles {
+    display: inline-block;
+    margin: auto auto auto 5%;
+}
+
+.input_form_ajout_vinyles {
+    display: block;
+    margin: auto auto 20px auto;
+    justify-content: center;
+    width: 90%;
+    background-color: white;
+}
+
+#divbtn_form_add {
+    display: flex;
+    margin: auto;
+    width: 90%;
+}
+
+.btn_form_add {
+    display: block;
+    margin: auto 3px auto 0px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+}
+
+/* page détails */
+
+#colonnes_details {
+    display: flex;
+    margin: auto;
+}
+
+.div_details {
+    display: block;
+    justify-content: flex-start;
+    margin: auto auto auto 5%;
+}
+
+.label_details_vinyles {
+    display: inline-block;
+    margin: auto;
+}
+
+.input_details_vinyles {
+    display: block;
+    color: black;
+    background-color: lightgray;
+    margin: auto auto 20px auto;
+    width: 200%;
+}
+
+.vinyle_details_picture {
+    display: block;
+    width: 367px;
+    height: 367px;
+}
+
+#div_details_img {
+    margin: auto auto auto 5%;
+}
+
+#div_btn_details {
+    display: block;
+    justify-content: flex-start;
+    margin: 10px auto auto 5%;
+}
+
+.button_modifier {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    border-radius: 15%;
+    border: none;
+    cursor: pointer;
+}
+
+/* formulaire de modification */
+
+.label_update_vinyles {
+    display: inline-block;
+    margin: auto auto auto 5%;
+}
+
+.input_update_vinyles {
+    display: block;
+    background-color: white;
+    margin: auto auto 20px auto;
+    width: 90%;
+}
+
+.update_picture {
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto auto 20px 5%;
+}

@@ -1,3 +1,4 @@
+-- Active: 1693467650807@@127.0.0.1@3306@base_exemple
 -- Rechercher le prénom des employés et le numéro de la région de leur département
 
 SELECT
