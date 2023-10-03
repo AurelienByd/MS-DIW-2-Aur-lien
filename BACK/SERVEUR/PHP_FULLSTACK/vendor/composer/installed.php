@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '2961df8ff9b5fde0298763a0ed9aa59508459d71',
+        'reference' => 'db05a8a77475a66c7f71bd0e5d795bed5c5b7d59',
         'name' => 'atone/aurelien',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '2961df8ff9b5fde0298763a0ed9aa59508459d71',
+            'reference' => 'db05a8a77475a66c7f71bd0e5d795bed5c5b7d59',
             'dev_requirement' => false,
         ),
         'myclabs/deep-copy' => array(
@@ -65,7 +65,7 @@
             'aliases' => array(
                 0 => '9999999-dev',
             ),
-            'reference' => 'e88da8d679acc3824ff231fdc553565b802ac016',
+            'reference' => 'b915445e7c837c2c1543332bd8324ae652fbbcac',
             'dev_requirement' => false,
         ),
         'phpunit/php-code-coverage' => array(

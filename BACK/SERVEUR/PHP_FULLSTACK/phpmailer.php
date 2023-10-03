@@ -1,9 +1,15 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require_once 'vendor/autoload.php';
+
+require_once 'PHPMailer/src/PHPMailer.php';
+require_once 'PHPMailer/src/SMTP.php';
+require_once 'PHPMailer/src/Exception.php';
 
 $mail = new PHPMailer(true);
 
@@ -36,8 +42,6 @@ $mail->addBCC("bcc@example.com");
 // On précise si l'on veut envoyer un email sous format HTML 
 $mail->isHTML(true);
 
-// On ajoute la/les pièce(s) jointe(s)
-$mail->addAttachment('/path/to/file.pdf');
 
 // Sujet du mail
 $mail->Subject = 'Test PHPMailer';
@@ -54,5 +58,3 @@ if ($mail){
         echo "L'envoi de mail a échoué. L'erreur suivante s'est produite : ", $mail->ErrorInfo;
         }
     }
-
-?>

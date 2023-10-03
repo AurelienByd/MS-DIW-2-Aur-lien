@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    require 'mails.php';
+    require 'phpmailer.php';
     ?>
 </body>
 </html>
